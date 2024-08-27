@@ -4,31 +4,16 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCqRgN0PuAsQJxgaSXfNxzlWabKOiLsIKg",
-  authDomain: "reactchat-1f85f.firebaseapp.com",
-  projectId: "reactchat-1f85f",
-  storageBucket: "reactchat-1f85f.appspot.com",
-  messagingSenderId: "81231426638",
-  appId: "1:81231426638:web:8f3d0a6c3d33be1916bf1f",
+  apiKey: "AIzaSyD4AwYq1VrqwYX6Gv040BIVyqrGAYf18tk",
+  authDomain: "chat-menna-b34e6.firebaseapp.com",
+  projectId: "chat-menna-b34e6",
+  storageBucket: "chat-menna-b34e6.appspot.com",
+  messagingSenderId: "741929625088",
+  appId: "1:741929625088:web:c8f7b1a1a9e075021fdae5",
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
 export const auth = getAuth();
 export const db = getFirestore();
 export const storage = getStorage();
-
-// import { initializeApp } from "firebase/app";
-
-// const firebaseConfig = {
-//   apiKey: "AIzaSyCqRgN0PuAsQJxgaSXfNxzlWabKOiLsIKg",
-//   authDomain: "reactchat-1f85f.firebaseapp.com",
-//   projectId: "reactchat-1f85f",
-//   storageBucket: "reactchat-1f85f.appspot.com",
-//   messagingSenderId: "81231426638",
-//   appId: "1:81231426638:web:8f3d0a6c3d33be1916bf1f"
-// };
-
-// // Initialize Firebase
-// const app = initializeApp(firebaseConfig);

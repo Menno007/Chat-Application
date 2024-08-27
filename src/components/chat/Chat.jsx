@@ -107,7 +107,12 @@ const Chat = () => {
       </div>
       <div className="center">
         {chat?.messages?.map((message) => (
-          <div className="massage own" key={message?.createAt}>
+          <div
+            className={
+              message.senderId === currentUser?.id ? "message own" : "message"
+            }
+            key={message?.createAt}
+          >
             {/* <img src="./avatar.png" alt="" className="src" /> */}
             <div className="texts">
               {message.img && <img src={message.img} alt="" className="src" />}
